@@ -1,5 +1,7 @@
 ###
 # My edits
+/figs
+/figs/*
 /concepts
 /concepts/*
 /activations
