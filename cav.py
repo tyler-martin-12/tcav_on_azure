@@ -43,7 +43,7 @@ class CAV(object):
     Returns:
       TF.HParams for training.
     """
-    return tf.contrib.training.HParams(model_type='linear', alpha=.01)
+    return tf.contrib.training.HParams(model_type='logistic', alpha=.01)
 
   @staticmethod
   def load_cav(cav_path):
