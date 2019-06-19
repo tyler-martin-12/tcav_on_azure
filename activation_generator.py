@@ -104,11 +104,11 @@ class ImageActivationGenerator(ActivationGeneratorBase):
     concept_dir = os.path.join(self.source_dir, concept)
     img_paths = [os.path.join(concept_dir, d)
                  for d in tf.gfile.ListDirectory(concept_dir)]
-    imgs = self.load_images_from_files(img_paths, self.max_examples,
-                                       shape=self.model.get_image_shape()[:2],concept)
+    imgs = self.load_images_from_files(img_paths, concept, self.max_examples, 
+                                       shape=self.model.get_image_shape()[:2])
     return imgs
 
-  def load_image_from_file(self, filename, shape, concept):
+  def load_image_from_file(self, filename, shape):
     """Given a filename, try to open the file. If failed, return None.
 
     Args:
@@ -140,10 +140,10 @@ class ImageActivationGenerator(ActivationGeneratorBase):
       return None
     return img
 
-  def load_images_from_files(self, filenames, max_imgs=500,
+  def load_images_from_files(self, filenames, concept, max_imgs=500,
                              do_shuffle=True, run_parallel=False,
                              shape=(299, 299),
-                             num_workers=100,concept):
+                             num_workers=100,):
     """Return image arrays from filenames.
 
     Args:
