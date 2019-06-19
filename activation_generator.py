@@ -105,10 +105,10 @@ class ImageActivationGenerator(ActivationGeneratorBase):
     img_paths = [os.path.join(concept_dir, d)
                  for d in tf.gfile.ListDirectory(concept_dir)]
     imgs = self.load_images_from_files(img_paths, self.max_examples,
-                                       shape=self.model.get_image_shape()[:2])
+                                       shape=self.model.get_image_shape()[:2],concept)
     return imgs
 
-  def load_image_from_file(self, filename, shape):
+  def load_image_from_file(self, filename, shape, concept):
     """Given a filename, try to open the file. If failed, return None.
 
     Args:
@@ -143,7 +143,7 @@ class ImageActivationGenerator(ActivationGeneratorBase):
   def load_images_from_files(self, filenames, max_imgs=500,
                              do_shuffle=True, run_parallel=False,
                              shape=(299, 299),
-                             num_workers=100):
+                             num_workers=100,concept):
     """Return image arrays from filenames.
 
     Args:
@@ -189,7 +189,12 @@ class ImageActivationGenerator(ActivationGeneratorBase):
     if len(imgs) <= 1:
       raise ValueError('You must have more than 1 image in each class to run TCAV.')
     # save filenames
-    save_path = 'files/f_used_10.pkl'
+
+    acts_dir = self.acts_dir
+
+    #save_path = 'files/f_used_10.pkl'
+    save_path = os.path.join(self.acts_dir, 'images_used_{}.pkl'.format(concept))
+
     if save_path is not None:
       with tf.gfile.Open(save_path, 'w') as pkl_file:
         pickle.dump(f_used, pkl_file)
@@ -197,3 +202,5 @@ class ImageActivationGenerator(ActivationGeneratorBase):
       tf.logging.info('save_path is None. Not saving anything')
 
     return np.array(imgs)
+
+
