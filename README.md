@@ -4,5 +4,6 @@ This repo contains some of my dissertation work for the MPhil in Machine Learnin
 ## Visualizing CAVs
 CAVs, or concept activation vectors are training using example images that contain a particular concept of interest. Below are some example concepts for the *striped* concept class.
 
-<img src="concept_examples/striped_1.jpg" width="100"><img src="concept_examples/striped_2.jpg" width="100">
-<img src="concept_examples/striped_3.jpg" width="100">
+<img src="concept_examples/striped_1.jpg" height="150">
+<img src="concept_examples/striped_2.jpg" height="150">
+<img src="concept_examples/striped_3.jpg" height="150">
