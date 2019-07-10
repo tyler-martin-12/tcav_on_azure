@@ -6,4 +6,11 @@ CAVs, or concept activation vectors are training using example images that conta
 
 <img src="concept_examples/striped_1.jpg" height="100"><img src="concept_examples/striped_2.jpg" height="100"><img src="concept_examples/striped_3.jpg" height="100">
 
+To learn the concept, a set of *random imamges* (from ImageNet) are used in a binary classfication task.
+
+<img src="concept_examples/random_1.JPEG" height="100"><img src="concept_examples/random_2.JPEG" height="100">
+<img src="concept_examples/random_3.JPEG" height="100">
+
+
+
 
