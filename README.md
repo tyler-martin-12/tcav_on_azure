@@ -15,14 +15,14 @@ The CAV is normal to the hyperplane that separates these two classes, learned th
 
 normal
 
-<img src="fig_for_github/pca_striped_sub_1-random500_0-mixed9-linear-0.1.png" height="300">
+<img src="figs_for_github/pca_striped_sub_1-random500_0-mixed9-linear-0.1.png" height="300">
 
 diff sub 1
 
-<img src="fig_for_github/pca_striped_sub_2-random500_0-mixed9-linear-0.1.png" height="300">
+<img src="figs_for_github/pca_striped_sub_2-random500_0-mixed9-linear-0.1.png" height="300">
 
 noise
-<img src="fig_for_github/pca_striped_sub_1-noise_color-mixed9-linear-0.1.png" height="300">
+<img src="figs_for_github/pca_striped_sub_1-noise_color-mixed9-linear-0.1.png" height="300">
 
 
 
