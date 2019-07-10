@@ -16,13 +16,16 @@ The CAV is normal to the hyperplane that separates these two classes, learned th
 CAVs can be learned from the activations of any layer in a given network. For this example, I'm using the "mixed9" layer of InceptionV3, trained for ImageNet. The CAV is also reduced to 2 dimensions using the same PCA embedding. It is normalized and shown in the top left of each plot.
 
 In the plot below, red points are from the concept (Pc), and blue are negative examples (N), which are random images. The CAV points from the blue to the red, as we would hope.
+
 <img src="figs_for_github/key.png" height="100">
 <img src="figs_for_github/pca_striped_sub_1-random500_0-mixed9-linear-0.1.png" height="300">
 
 A similar CAV is leared using a different set of the same (striped) concept.
+
 <img src="figs_for_github/pca_striped_sub_2-random500_0-mixed9-linear-0.1.png" height="300">
 
 Using random noise instead of random images from ImageNet, the "spread" of the negative class decreases significantly, as seen in the PCA embedding. This has an impact on the CAV too.
+
 <img src="figs_for_github/pca_striped_sub_1-noise_color-mixed9-linear-0.1.png" height="300">
 
 This work is from `analyze_cavs_azure.ipynb` although this notebook is still a work in progress.
