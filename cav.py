@@ -252,7 +252,7 @@ class CAV(object):
 
     """
     x_train, x_test, y_train, y_test = train_test_split(
-        x, y, test_size=0.33, stratify=y, random_seed = 1)
+        x, y, test_size=0.33, stratify=y, random_state = 1)
     # if you get setting an array element with a sequence, chances are that your
     # each of your activation had different shape - make sure they are all from
     # the same layer, and input image size was the same
@@ -291,7 +291,7 @@ class CAV(object):
 
     """
     x_train, x_test, y_train, y_test = train_test_split(
-        x, y, test_size=0.33, stratify=y, random_seed = 1)
+        x, y, test_size=0.33, stratify=y, random_state = 1)
     # if you get setting an array element with a sequence, chances are that your
     # each of your activation had different shape - make sure they are all from
     # the same layer, and input image size was the same
