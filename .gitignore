@@ -1,5 +1,11 @@
 ###
 # My edits
+/cav_dir/
+/cav_dir/*
+/results/
+/results/*
+/new_figs/
+/new_figs/*
 /figs
 /figs/*
 /concepts
