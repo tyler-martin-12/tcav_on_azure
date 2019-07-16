@@ -69,7 +69,7 @@ class ActivationGeneratorBase(ActivationGeneratorInterface):
     if self.acts_dir and not tf.gfile.Exists(self.acts_dir):
       tf.gfile.MakeDirs(self.acts_dir)
 
-    print(concepts)
+    tf.logging.info(concepts)
     for concept in concepts:
       if concept not in acts:
         acts[concept] = {}
@@ -141,7 +141,7 @@ class ImageActivationGenerator(ActivationGeneratorBase):
     return img
 
   def load_images_from_files(self, filenames, concept, max_imgs=500,
-                             do_shuffle=True, run_parallel=False,
+                             do_shuffle=False, run_parallel=False,
                              shape=(299, 299),
                              num_workers=100,):
     """Return image arrays from filenames.
@@ -160,7 +160,8 @@ class ImageActivationGenerator(ActivationGeneratorBase):
     """
     imgs = []
     # First shuffle a copy of the filenames.
-    filenames = filenames[:]
+    filenames.sort()
+    #filenames = filenames[:]
     if do_shuffle:
       np.random.shuffle(filenames)
       #pass
