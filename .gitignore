@@ -1,5 +1,14 @@
 ###
 # My edits
+/df_files/
+/df_files/*
+/exp_files/
+/exp_files/*
+/other_pkl/
+/other_pkl/*
+
+/saliency/
+/saliency/*
 /final_acts/
 /final_acts/*
 /cav_dir/
