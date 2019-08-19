@@ -4,12 +4,12 @@ This repo contains some of my dissertation work for the MPhil in Machine Learnin
 ## Visualizing CAVs
 CAVs, or concept activation vectors are trained using example images that contain a particular concept of interest. Below are some example concepts for the *striped* concept class.
 
-<img src="concept_examples/striped_1.jpg" height="100"><img src="concept_examples/striped_2.jpg" height="100"><img src="concept_examples/striped_3.jpg" height="100">
+<img src="examples_of_concepts/striped_1.jpg" height="100"><img src="examples_of_concepts/striped_2.jpg" height="100"><img src="examples_of_concepts/striped_3.jpg" height="100">
 
 To learn the concept, a set of *random images* (from ImageNet) are used in a binary classfication task. The data for the classification is the activations for each images in a given layer in a neural net.
 
-<img src="concept_examples/random_1.JPEG" height="100"><img src="concept_examples/random_2.JPEG" height="100">
-<img src="concept_examples/random_3.JPEG" height="100">
+<img src="examples_of_concepts/random_1.JPEG" height="100"><img src="examples_of_concepts/random_2.JPEG" height="100">
+<img src="examples_of_concepts/random_3.JPEG" height="100">
 
 The CAV is normal to the hyperplane that separates these two classes, learned through a linear classifier. Part of my work is visualizing the two classes and learned CAV. In other words, it should point "towards" the concept class. Through PCA, I have visualized CAVs under several conditions.
 
