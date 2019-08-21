@@ -10,6 +10,11 @@ This notebook also contains an example of finding prototypical concept images. I
 
 <img src="figs_for_readme/grassland.png" width="400">
 
+## PCA decompostion (Sec 3.1)
+Dimensionality reduction techniques can be used to visualize CAVs and concepts in low dimensional spaces. See `pca_example.ipynb` for a demonstration.
+
+<img src="figs_for_readme/fig_3_1.png" width="400">
+
 
 ## Visualizing CAVs
 CAVs, or concept activation vectors are trained using example images that contain a particular concept of interest. Below are some example concepts for the *striped* concept class.
