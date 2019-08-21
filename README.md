@@ -2,10 +2,10 @@
 This repo contains some of my dissertation work for the MPhil in Machine Learning at the University of Cambridge. I'm working on Interpretable Machine Learning. The original repo is from [TCAV](https://github.com/tensorflow/tcav). This is currently a work in progress!
 
 ## Sorting Images with CAVs (Sec 3.5)
-See `sorting_example.ipynb` for a simple demonstration of sorting class images (zebra) by CAV from a concept (striped). This notebook also contains and example of finding prototypical concept images.
-
-<img src="figs_for_readme/all_sorted.png" width="800">
-<img src="figs_for_readme/grassland.png" width="800">
+See `sorting_example.ipynb` for a simple demonstration of sorting class images (zebra) by the CAV from a concept (striped). 
+<img src="figs_for_readme/all_sorted.png" width="600">
+This notebook also contains an example of finding prototypical concept images. In this case, the concept images are sorted by their similarity to the CAV that they generate.
+<img src="figs_for_readme/grassland.png" width="600">
 
 
 ## Visualizing CAVs
