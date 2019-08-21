@@ -3,9 +3,11 @@ This repo contains some of my dissertation work for the MPhil in Machine Learnin
 
 ## Sorting Images with CAVs (Sec 3.5)
 See `sorting_example.ipynb` for a simple demonstration of sorting class images (zebra) by the CAV from a concept (striped). 
-<img src="figs_for_readme/all_sorted.png" width="600">
+<img src="figs_for_readme/all_sorted.png" width="400">
+
 This notebook also contains an example of finding prototypical concept images. In this case, the concept images are sorted by their similarity to the CAV that they generate.
-<img src="figs_for_readme/grassland.png" width="600">
+
+<img src="figs_for_readme/grassland.png" width="400">
 
 
 ## Visualizing CAVs
